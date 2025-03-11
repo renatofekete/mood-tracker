@@ -4,7 +4,7 @@ import { ThemeSupa } from '@supabase/auth-ui-shared';
 import { AuthContext } from '../contexts/AuthContext';
 import { Link } from 'react-router';
 
-export function Login() {
+export default function Login() {
     const authContext = useContext(AuthContext);
     
     if(!authContext) {

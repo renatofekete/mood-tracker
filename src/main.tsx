@@ -1,9 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router'
-import { Home } from './pages/Home'
-import { Login } from './pages/Login'
 import { AuthProvider } from './contexts/AuthContext'
+import Home from './pages/Home'
+import Login from './pages/Login'
+import MoodLogging from './pages/MoodLogging'
 
 
 
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')!).render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/logging" element={<MoodLogging />} />
           <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
